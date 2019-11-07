@@ -9,12 +9,12 @@ ventana.title("")
 
 #AnchoxAlto
 ventana.geometry("700x600")
-ventana.configure(background="pale goldenrod")
+ventana.configure(background="white")
 
 
 
 
-etiqueta1=tk.Label(ventana,text="Paises:",bg="pale goldenrod",fg="black")
+etiqueta1=tk.Label(ventana,text="Paises:",bg="white",fg="black",font=("Verdana",20))
 etiqueta1.pack(padx=20,pady=20,side=tk.LEFT)
 
 image=tk.PhotoImage(file="1.gif")
