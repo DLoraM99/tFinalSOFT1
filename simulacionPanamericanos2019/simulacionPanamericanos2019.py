@@ -23,6 +23,11 @@ label=tk.Label(image=image)
 label.pack()
 
 
+generarR = tkinter.Button(text = "Generar", command = "")
+generarR.pack()
+generarR.place(bordermode = tkinter.OUTSIDE, x = 75, y = 400)
+
+
 ventana.mainloop()
 
 lista = randomPaises.rand(10)
