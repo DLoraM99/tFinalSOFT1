@@ -33,11 +33,11 @@ generarR.place(bordermode = tkinter.OUTSIDE, x = 75, y = 400)
 
 grafico = tkinter.Button(text = "Generar Gráfico", command = "")
 grafico.pack()
-grafico.place(bordermode = tkinter.OUTSIDE, x = 200, y = 400)
+grafico.place(bordermode = tkinter.OUTSIDE, x = 180, y = 400)
 
 btn = tkinter.Button(text = "Ver Detalles", command = "")
 btn.pack()
-btn.place(bordermode = tkinter.OUTSIDE, x = 300, y = 400)
+btn.place(bordermode = tkinter.OUTSIDE, x = 350, y = 400)
 
 window.config(menu = menu)
 window.mainloop()
