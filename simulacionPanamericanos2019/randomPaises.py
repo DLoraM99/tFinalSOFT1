@@ -32,7 +32,6 @@ def rand(cant) :
         if not(participantes[indice] in elegidos) :
             elegidos.append(participantes[indice])
 
-
     elegidos.sort()
 
     return elegidos
