@@ -19,18 +19,18 @@ def rand(cant) :
     """ funcion que retorna una cantidad N de paises aleatoriamente de entre 41 """
     import random
     elegidos = []
-    participantes = ["Antigua y Barbuda", "Argentina", "Aruba", "Bahamas", "Barbados", "Belize", "Bermuda", "Bolivia", 
-                     "Brasil", "Islas Virgenes Británicas", "Canadá", "Islas Caimán", "Chile", "Colombia", "Costa Rica",
-                     "Cuba", "Dominica", "República Dominicana", "Ecuador", "El Salvador", "Granada", "Guatemala", "Guyana",
-                     "Haití", "Honduras", "Jamaica", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "Puerto Rico",
-                     "Santa Lucía", "San Cristobal y Nieves", "San Vicente y las Granaditas", "Suriname", "Trinidad y Tobago",
-                     "Estados Unidos", "Uruguay", "Venezuela", "Islas Vírgenes"]
+    paises = ['Antigua y Barbuda', 'Argentina', 'Aruba', 'Bahamas', 'Barbados', 'Belize', 'Bermuda', 'Bolivia',
+              'Brasil', 'Canadá', 'Chile', 'Colombia', 'Costa Rica', 'Cuba', 'Dominica', 'Ecuador', 'El Salvador',
+              'Estados Unidos', 'Granada', 'Guatemala', 'Guyana', 'Haití', 'Honduras', 'Islas Caimán',
+              'Islas Virgenes Británicas', 'Islas Vírgenes', 'Jamaica', 'México', 'Nicaragua', 'Panamá', 'Paraguay',
+              'Perú', 'Puerto Rico', 'República Dominicana', 'San Cristobal y Nieves', 'San Vicente y las Granaditas',
+              'Santa Lucía', 'Suriname', 'Trinidad y Tobago', 'Uruguay', 'Venezuela']
 
     while (len(elegidos) != cant) :
         indice = random.randint(0, 41)
 
-        if not(participantes[indice] in elegidos) :
-            elegidos.append(participantes[indice])
+        if not(paises[indice] in elegidos) :
+            elegidos.append(paises[indice])
 
     elegidos.sort()
 
