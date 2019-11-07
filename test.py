@@ -1,5 +1,6 @@
 from tkinter import *
 import tkinter
+import randomPaises
 
 window = tkinter.Tk()
 menu = Menu(window) 
