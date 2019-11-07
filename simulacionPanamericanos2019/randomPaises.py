@@ -29,7 +29,10 @@ def rand(cant) :
     while (len(elegidos) != cant) :
         indice = random.randint(0, 41)
 
-        if not(partipantes[indice] in elegidos) :
-            elegidos.append(participantes[index])
+        if not(participantes[indice] in elegidos) :
+            elegidos.append(participantes[indice])
+
+
+    elegidos.sort()
 
     return elegidos
