@@ -1,35 +1,34 @@
-import tkinter
-import randomPaises
-
-#PRINCIPAL
 # -*- coding: utf-8 -*-
-import tkinter as tk
-ventana=tk.Tk()
+import tkinter
+from PIL import Image,ImageTk 
+
+ventana=tkinter.Tk()
 ventana.title("")
 
 #AnchoxAlto
-ventana.geometry("700x600")
+ventana.geometry("500x500")
 ventana.configure(background="white")
+ventana.resizable(0,0)
 
 
+etiqueta1=tkinter.Label(ventana,text="Países:",bg="white",fg="black",font=("Verdana",13))
+etiqueta1.place(x=120,y=250)
 
+image=Image.open("imagen.jpg")
+foto=ImageTk.PhotoImage(image)
+lab=tkinter.Label(image=foto)
+lab.pack()
 
-etiqueta1=tk.Label(ventana,text="Paises:",bg="white",fg="black",font=("Verdana",20))
-etiqueta1.pack(padx=20,pady=20,side=tk.LEFT)
+fn=tkinter.StringVar()
 
-image=tk.PhotoImage(file="1.gif")
-image=image.subsample(1,1)
-label=tk.Label(image=image)
-label.pack()
+entrada=tkinter.Entry(ventana,textvar=fn)
+entrada.place(x=200,y=257)
+
 
 
 generar= tkinter.Button(text = "Generar", command = "")
 generar.pack()
-generar.place(bordermode = tkinter.OUTSIDE, x = 75, y = 400)
+generar.place(bordermode = tkinter.OUTSIDE, x = 230, y = 300)
 
 
 ventana.mainloop()
-
-lista = randomPaises.rand(10)
-
-print(lista)
