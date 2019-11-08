@@ -13,8 +13,24 @@ __mail__="diego.lora@usil.pe"
 __status__="Estudiante"
 
 
+ #CODIGO PASCAL
+    #begin
+  #{ORDENAMIENTO POR INTERCAMBIO}
+  #for i:=1 to numDat-1 do begin
+    #for j:=i+1 to numDat do begin
+      #if algo[i]>algo[j] then begin
+        #auxAlgo := algo[i];
+        #algo[i] := algo[j];
+        #algo[j] := auxAlgo;
+      #end;
+
+    #end;
+  #end;"""
+
+
+
 #funciones
-def bubble(lista, tipo) :
+def bubbleOro(lista, tipo) :
     """ funcion que realiza Buble Sort y ordena  """
     
     if (tipo=="menor") :
