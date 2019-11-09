@@ -1,9 +1,15 @@
 import ordenamiento
 
-oro = [1,2,3,4,5,6,7,8,9,10]
-plata = [1,2,3,4,5,6,7,8,9,10]
-bronce = [1,2,3,4,5,6,7,8,9,10]
+nomb = ["Peru", "Argentina", "Brasil", "Mexico", "Estados Unidos"]
+oro = [1,2,3,4,5]
+plata = [1,2,3,4,5]
+bronce = [1,2,3,4,5]
+total = [3,6,9,12,15]
 
-ordenamiento.bubbleOro(oro, plata, bronce)
+ordenamiento.bubbleOro(nomb, oro, plata, bronce, total)
 
-print(oro, plata, bronce)
+print(nomb)
+print(oro)
+print(plata)
+print(bronce)
+print(total)

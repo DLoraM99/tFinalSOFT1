@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 """
-    El módulo genera aleatoriamente una lista de 10 países a partir de
+    El módulo genera aleatoriamente una lista de N países a partir de
     otros 41 predefinidos.
 """
 
 
 #metadata
 __author__="Diego Lora"
-__copyrihgt__="Open source"
+__copyrihgt__="DLM"
 __version__="v. 1.0"
 __mail__="diego.lora@usil.pe"
 __status__="Estudiante"
