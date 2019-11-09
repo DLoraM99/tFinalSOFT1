@@ -34,6 +34,7 @@ def bubbleOro(listaOro, listaPlt, listaBrz) :
                 listaBrz[j] = auxBrz
 
 
+
 def bubblePlt(listaOro, listaPlt, listaBrz) :
     """ funcion que realiza Buble Sort y ordena las listas según la mayor cantidad de medallas de plata """
     cantDat = len(listaPlt)
@@ -51,6 +52,7 @@ def bubblePlt(listaOro, listaPlt, listaBrz) :
                 auxBrz = listaBrz[i]
                 listaBrz[i] = listaBrz[j]
                 listaBrz[j] = auxBrz
+
 
 
 def bubbleBrz(listaOro, listaPlt, listaBrz) :
@@ -75,7 +77,7 @@ def bubbleBrz(listaOro, listaPlt, listaBrz) :
 
 
  #CODIGO PASCAL <3
-    #begin
+ #begin
   #{ORDENAMIENTO POR INTERCAMBIO}
   #for i:=1 to numDat-1 do begin
     #for j:=i+1 to numDat do begin
@@ -86,3 +88,4 @@ def bubbleBrz(listaOro, listaPlt, listaBrz) :
       #end;
     #end;
   #end;
+ #end;
