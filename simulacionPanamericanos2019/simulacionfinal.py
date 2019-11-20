@@ -6,7 +6,7 @@ from PIL import Image,ImageTk
 
 #FUNCIONES Y PROCESOS
 def generarPaises(ran) :
-    paisesParticipantes = randomPaises.rand(ran)
+    paisesParticipantes = randomPaises.generarPaises(ran)
     return paisesParticipantes
     
 def MostrarPaises():
