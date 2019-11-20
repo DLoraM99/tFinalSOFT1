@@ -2,7 +2,7 @@
 
 """
     El módulo genera aleatoriamente una lista de N países a partir de
-    otros 41 predefinidos.
+    los 41 países que participaron, establecidos previamente.
 """
 
 
@@ -35,3 +35,27 @@ def generarPaises(cant) :
     elegidos.sort()
 
     return elegidos
+
+
+
+def generarCantidadParticipantes(paisesComp) :
+    """ funcion que retorna la cantidad de participantes de los paises elegidos """
+    cantPart = []
+    paises = ['Antigua y Barbuda', 'Argentina', 'Aruba', 'Bahamas', 'Barbados', 'Belize', 'Bermuda', 'Bolivia',
+              'Brasil', 'Canadá', 'Chile', 'Colombia', 'Costa Rica', 'Cuba', 'Dominica', 'Ecuador', 'El Salvador',
+              'Estados Unidos', 'Granada', 'Guatemala', 'Guyana', 'Haití', 'Honduras', 'Islas Caimán',
+              'Islas Virgenes Británicas', 'Islas Vírgenes', 'Jamaica', 'México', 'Nicaragua', 'Panamá', 'Paraguay',
+              'Perú', 'Puerto Rico', 'República Dominicana', 'San Cristobal y Nieves', 'San Vicente y las Granaditas',
+              'Santa Lucía', 'Suriname', 'Trinidad y Tobago', 'Uruguay', 'Venezuela']
+    participantes = [9, 529, 21, 33, 31, 6, 17, 49, 487, 5, 477, 6, 317, 349, 84, 420, 2, 209, 201, 56, 11, 144, 26, 8, 
+                     44, 131, 543, 61, 83, 71, 592, 244, 7, 4, 4, 6, 98, 643, 147, 282, 30]
+
+    cantPaises = len(paisesComp)
+
+    for i in range(paisesComp) :
+        pais = paisesComp[i]
+        indice = paises.index(pais)
+        part = participantes[indice]
+        cantPart.append(part)
+            
+    return cantPart
