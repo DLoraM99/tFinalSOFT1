@@ -1,6 +1,6 @@
 import ordenamiento
 import randomPaises
-import random
+import medallas
 
 """
 nomb = ["Peru", "Argentina", "Brasil", "Mexico", "Estados Unidos"]
@@ -19,9 +19,10 @@ print(total)
 
 """
 
-for i in range(5) :
-    cantidad = random.randint(10, 20)
+paises = randomPaises.generarPaises(5)
+particip = randomPaises.generarCantParticip(paises)
+med = medallas.generarMedallas(paises, particip)
 
-    paises = randomPaises.generarPaises(cantidad)
-
-    print(paises)
+print(paises)
+print(particip)
+print(med)
