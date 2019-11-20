@@ -1,5 +1,8 @@
 import ordenamiento
+import randomPaises
+import random
 
+"""
 nomb = ["Peru", "Argentina", "Brasil", "Mexico", "Estados Unidos"]
 oro = [1,2,3,4,5]
 plata = [1,2,3,4,5]
@@ -13,3 +16,12 @@ print(oro)
 print(plata)
 print(bronce)
 print(total)
+
+"""
+
+for i in range(5) :
+    cantidad = random.randint(10, 20)
+
+    paises = randomPaises.generarPaises(cantidad)
+
+    print(paises)

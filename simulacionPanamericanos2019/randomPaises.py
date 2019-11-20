@@ -15,7 +15,7 @@ __status__="Estudiante"
 
 
 #funciones
-def rand(cant) :
+def generarPaises(cant) :
     """ funcion que retorna una cantidad N de paises aleatoriamente de entre 41 """
     import random
     elegidos = []
@@ -27,7 +27,7 @@ def rand(cant) :
               'Santa Lucía', 'Suriname', 'Trinidad y Tobago', 'Uruguay', 'Venezuela']
 
     while (len(elegidos) != cant) :
-        indice = random.randint(0, 41)
+        indice = random.randint(0, 40)
 
         if not(paises[indice] in elegidos) :
             elegidos.append(paises[indice])
