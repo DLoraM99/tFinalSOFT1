@@ -16,7 +16,7 @@ __status__="Estudiante"
 
 
 #funciones
-def bubbleOro(paises, listaOro, listaPlt, listaBrz, totalMed) :
+def bubbleOro(paises, particip, listaOro, listaPlt, listaBrz, totalMed) :
     """ funcion que realiza BubleSort y ordena las listas según la mayor cantidad de medallas de oro """
     cantDat = len(listaOro)
     for i in range(cantDat) :
@@ -25,6 +25,10 @@ def bubbleOro(paises, listaOro, listaPlt, listaBrz, totalMed) :
                 auxPais = paises[i]
                 paises[i] = paises[j]
                 paises[j] = auxPais
+                
+                auxParticip = particip[i]
+                particip[i] = particip[j]
+                particip[j] = auxParticip
 
                 auxOro = listaOro[i]
                 listaOro[i] = listaOro[j]
@@ -44,7 +48,7 @@ def bubbleOro(paises, listaOro, listaPlt, listaBrz, totalMed) :
 
 
 
-def bubblePlt(paises, listaOro, listaPlt, listaBrz, totalMed) :
+def bubblePlt(paises, particip, listaOro, listaPlt, listaBrz, totalMed) :
     """ funcion que realiza BubleSort y ordena las listas según la mayor cantidad de medallas de plata """
     cantDat = len(listaPlt)
     for i in range(cantDat) :
@@ -53,6 +57,10 @@ def bubblePlt(paises, listaOro, listaPlt, listaBrz, totalMed) :
                 auxPais = paises[i]
                 paises[i] = paises[j]
                 paises[j] = auxPais
+                
+                auxParticip = particip[i]
+                particip[i] = particip[j]
+                particip[j] = auxParticip
 
                 auxOro = listaOro[i]
                 listaOro[i] = listaOro[j]
@@ -72,7 +80,7 @@ def bubblePlt(paises, listaOro, listaPlt, listaBrz, totalMed) :
 
 
 
-def bubbleBrz(paises, listaOro, listaPlt, listaBrz, totalMed) :
+def bubbleBrz(paises, particip, listaOro, listaPlt, listaBrz, totalMed) :
     """ funcion que realiza BubleSort y ordena las listas según la mayor cantidad de medallas de bronce """
     cantDat = len(listaBrz)
     for i in range(cantDat) :
@@ -81,6 +89,10 @@ def bubbleBrz(paises, listaOro, listaPlt, listaBrz, totalMed) :
                 auxPais = paises[i]
                 paises[i] = paises[j]
                 paises[j] = auxPais
+                
+                auxParticip = particip[i]
+                particip[i] = particip[j]
+                particip[j] = auxParticip
 
                 auxOro = listaOro[i]
                 listaOro[i] = listaOro[j]
