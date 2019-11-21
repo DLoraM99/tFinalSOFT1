@@ -114,26 +114,15 @@ lista3 = genParticipantes(lista2)
 lista4 = genMedallas(lista2, lista3)
 x=len(lista2)
 y=len(lista4)
-print(y)
+
 lista5=[0]*x
 for i in range (x):
     lista5[i]=[0]*y
     
-
-
 for i in range (y):
     for j in range (x):
         lista5[j][i]=lista4[i][j]      
-print(lista5)
-"""
-lista6=[0]*x
-for i in range (x):
-    lista6[i]=[0]*y
-"""
-#for i in range x
 
-#for i in range y:
-print(lista4)
 #INTERFAZ GRAFICA
 ventana=tkinter.Tk()
 ventana.title("")
@@ -160,7 +149,6 @@ participantes.pack()
 participantes.place(bordermode = tkinter.OUTSIDE, x = 120, y = 300)
 
 # BOTON DE GENERAR MEDALLAS
-
 medalls= tkinter.Button(text = "Medallas", command = MostrarMedallas)
 medalls.pack()
 medalls.place(bordermode = tkinter.OUTSIDE, x = 80, y = 340)
