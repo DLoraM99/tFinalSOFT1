@@ -4,15 +4,20 @@ import randomPaises
 import random
 from PIL import Image,ImageTk 
 
+
 #FUNCIONES Y PROCESOS
-def generarPaises(ran) :
+def genPaises(ran) :
     paisesParticipantes = randomPaises.generarPaises(ran)
     return paisesParticipantes
+
+def genParticipantes(paisesParticip) :
+    numParticip = randomPaises.generarCantParticip(paisesParticip)
+    return numParticip
     
 def MostrarPaises():
     lista=tkinter.Listbox(ventana)
     lista.insert(0)
-    lista2=generarPaises(ran)
+    lista2=genPaises(ran)
     num=len(lista2)
     for i in range(num):
         a=(lista2[i])
@@ -30,9 +35,12 @@ def MostrarMedallero():
         lista.insert(tkinter.END,a)    
     lista.pack()
     lista.place(x=400,y=257)
-    
+
+
 #RANDOM PARA GENERAR LOS PAISES
-ran = random.randint(9,21)
+ran = random.randint(10,40)
+
+
 
 #INTERFAZ GRAFICA
 ventana=tkinter.Tk()
