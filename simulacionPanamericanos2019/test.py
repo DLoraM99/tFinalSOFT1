@@ -2,7 +2,7 @@ import ordenamiento
 import randomPaises
 import medallas
 
-"""
+
 nomb = ["Peru", "Argentina", "Brasil", "Mexico", "Estados Unidos"]
 oro = [1,2,3,4,5]
 plata = [1,2,3,4,5]
@@ -17,7 +17,7 @@ print(plata)
 print(bronce)
 print(total)
 
-"""
+
 
 paises = randomPaises.generarPaises(5)
 particip = randomPaises.generarCantParticip(paises)
