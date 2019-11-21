@@ -27,63 +27,62 @@ def MostrarPaises():
         a=(lista2[i])
         lista.insert(tkinter.END,a)    
     lista.pack()
-    lista.place(x=300,y=257)
+    lista.place(x=250,y=257)
     
     Pa = tkinter.Label(text = "Paises", bg = "white")
     Pa.pack()
-    Pa.place(x = 335, y = 235)
+    Pa.place(x = 285, y = 235)
 
 def MostrarMarticipantes():
-    lista=tkinter.Listbox(ventana)
+    lista=tkinter.Listbox(ventana, width = 5)
     lista.insert(0)
     num=len(lista3)
     for i in range(num):
         a=(lista3[i])
         lista.insert(tkinter.END,a)    
     lista.pack()
-    lista.place(x=500,y=257)
+    lista.place(x=405,y=257)
     
     P = tkinter.Label(text = "Participantes", bg = "white")
     P.pack()
-    P.place(x = 535, y = 235)
+    P.place(x = 385, y = 235)
 
 def MostrarMedallas():
-    lista=tkinter.Listbox(ventana)
+    lista=tkinter.Listbox(ventana, width = 100, height = 4)
     lista.insert(0)
     num=len(lista4)
     for i in range(num):
         a=(lista4[i])
         lista.insert(tkinter.END,a)    
     lista.pack()
-    lista.place(x=700,y=257)
+    lista.place(x=500,y=257)
     
     # LABELS
     
     M = tkinter.Label(text = "Medallas", bg = "white")
     M.pack()
-    M.place(x = 735, y = 235)
+    M.place(x = 535, y = 235)
     
     o = tkinter.Label(text = "Oro", bg = "white")
     o.pack()
-    o.place(x=650, y=258)
+    o.place(x=450, y=258)
     
     p = tkinter.Label(text = "Plata", bg = "white")
     p.pack()
-    p.place(x=650, y=273)
+    p.place(x=450, y=273)
     
     b = tkinter.Label(text = "Bronce", bg = "white")
     b.pack()
-    b.place(x=650, y=288)
+    b.place(x=450, y=288)
     
     t = tkinter.Label(text = "Total", bg = "white")
     t.pack()
-    t.place(x=650, y=303)
+    t.place(x=450, y=303)
     
 def newWin():
-    tkinter.Toplevel(ventana)
     #CABECERA
     ventana.title("Acerca de")
-    ventana.geometry('800x500')
+    ventana.geometry('500x500')
     
     #TITULO DE CONTENIDO
     titulo1 = tkinter.Label(ventana, text = "Simulación de Resultados", height = 2, width = 100)
