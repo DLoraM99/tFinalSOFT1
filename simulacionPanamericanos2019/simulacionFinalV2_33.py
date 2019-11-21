@@ -82,7 +82,7 @@ def MostrarMedallas():
 def newWin():
     #CABECERA
     ventana.title("Acerca de")
-    ventana.geometry('500x500')
+    ventana.geometry('300x500')
     
     #TITULO DE CONTENIDO
     titulo1 = tkinter.Label(ventana, text = "Simulación de Resultados", height = 2, width = 100)
@@ -105,7 +105,7 @@ def newWin():
     
     regresar= tkinter.Button(ventana, text = "Salir", command = ventana.destroy)
     regresar.pack()
-    regresar.place(bordermode = tkinter.OUTSIDE, x = 120, y = 300)
+    regresar.place(bordermode = tkinter.OUTSIDE, x = 20, y = 300)
 
 #RANDOM PARA GENERAR LOS PAISES
 ran = random.randint(10,40)
@@ -172,4 +172,3 @@ AcercaDe.place(bordermode = tkinter.OUTSIDE, x = 80, y = 380)
 
 # GENERACION DE VENTANA
 ventana.mainloop()
-
